@@ -23,28 +23,30 @@
 ```bash
 git clone https://github.com/your-username/faith-connect-bot.git
 cd faith-connect-bot
-
+```
 ## 2. Install Dependencies
 
 Ensure you have Node.js installed. Then, install the required dependencies by running:
-
+```bash
 npm install
+```
 
 ## 3. Create .env File
 
 Create a .env file in the root of the project to store your bot token and MongoDB URI:
-
+```bash
 DISCORD_TOKEN=your-bot-token
 MONGODB_URI=your-mongodb-connection-string
 
-    Replace your-bot-token with your bot's token from the Discord Developer Portal.
-    Replace your-mongodb-connection-string with your MongoDB URI.
-
+Replace your-bot-token with your bot's token from the Discord Developer Portal.
+Replace your-mongodb-connection-string with your MongoDB URI.
+```
 ## 4. Start the Bot
 
 Once everything is set up, start the bot using the following command:
-
+```bash
 node index.js
+```
 
 Commands
 User Commands
