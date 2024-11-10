@@ -48,32 +48,64 @@ Once everything is set up, start the bot using the following command:
 node index.js
 ```
 
-Commands
-User Commands
-1. !register <location>
+## 5. Commands
+1. !hey
 
-This command allows a user to register their location.
+Sends a DM to the user asking for their location to register. Listens for the user's reply in the DM.
+2. !register <location>
+
+Registers the user with a location in the MongoDB database.
 
 Example:
 
 !register UK
 
-This will register the user with the location UK in the MongoDB database.
-2. !findUsers <location>
+3. !find <location>
 
-This command allows users to search for other users in a specific location.
-
-Example:
-
-!findUsers UK
-
-This will return a list of users who have the location UK registered.
-3. !joinChannel <location>
-
-This command allows users to request to join a location-based channel. If the user’s location matches the channel’s location, they will be added automatically. If not, the bot will send a request to an admin for approval.
+Searches for Discord channels associated with a location and sends a list of channels.
 
 Example:
 
-!joinChannel UK
+!find UK
+
+4. !join <location>
+
+Sends a request to join a channel associated with a location to the admin for approval.
+
+Example:
+
+!join UK
+
+5. !approve <user_id> <location>
+
+Grants the user access to channels associated with a location after admin approval.
+
+Example:
+
+!approve 123456789012345678 UK
+
+6. !search <location>
+
+Searches for users registered in a specified location and mentions them.
+
+Example:
+
+!search UK
+
+7. !remove_from_channel <channel_name>
+
+Removes the user from a specified channel.
+
+Example:
+
+!remove_from_channel uk-channel
+
+8. !mylocation
+
+Displays the user's registered location and lists other users in the same location.
+
+Example:
+
+!mylocation
 
 This will either add the user to the UK channel if the locations match or request admin approval.
