@@ -1,7 +1,6 @@
 # Faith Connect
 
-**Faith Connect** is a location-based community bot for Discord, designed to help users connect with others based on shared geographical areas. This bot enables members to register their locations, find friends nearby, and join relevant channels within a server. Faith Connect fosters community building by giving users the opportunity to explore faith-based connections and support within their local areas.
-
+**Faith Connect** Faith Connect is a location-based community bot for Discord, tailored to help Christians connect with others based on shared geographical areas. This bot enables members to register their locations, find friends nearby, and join relevant channels within a server, fostering faith-based connections and support within local communities.
 ## Features
 
 - **User Registration**: Register and store your location in the database.
